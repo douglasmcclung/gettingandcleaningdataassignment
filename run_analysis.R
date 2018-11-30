@@ -57,11 +57,9 @@ filteredData <- bind_cols(allData[1:2], allData[paste("V", columns$V1, sep = "")
 
 ## Assign appropriate activity names
 activityNames <- read.table("activity_labels.txt", header = FALSE, sep = "")
-activityNames %>%
-    rename(Activity = V2)
 
 filteredData <- inner_join(filteredData, activityNames, by = c("V1100" = "V1"))
-str(filteredData)
+#str(filteredData)
 
 
 ##
@@ -143,4 +141,4 @@ filteredData <- filteredData %>%
 summarizedData <- filteredData %>%
     group_by(Subject, Activity) %>%
     summarise_all(funs(mean, sd))
-#str(summarizedData)
+str(summarizedData)

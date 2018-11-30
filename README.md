@@ -9,7 +9,8 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 ```
-Download and unzip the raw data files found here: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.  Save the unzipped files to a sub-directory or your R Studio working directory named UCI HAR Dataset.
+Download and unzip the raw data files found here: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.  
+Save the unzipped files to a sub-directory or your R Studio working directory named UCI HAR Dataset.
 ```
 
 ## Running the tests
@@ -38,7 +39,7 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [dplyr](http://www.dropwizard.io/1.0.2/docs/)
+* [dplyr](https://cran.r-project.org/web/packages/dplyr/dplyr.pdf)
 
 ## Authors
 

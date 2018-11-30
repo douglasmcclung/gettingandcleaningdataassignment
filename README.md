@@ -13,29 +13,28 @@ Download and unzip the raw data files found here: https://d396qusza40orc.cloudfr
 Save the unzipped files to a sub-directory or your R Studio working directory named UCI HAR Dataset.
 ```
 
-## Running the tests
+## Running the script
 
-Explain how to run the automated tests for this system
+Open the run_analysis.R script in R Studio.  Run the script.  
 
-### Break down into end to end tests
-
-Explain what these tests test and why
+### What the script does
 
 ```
-Give an example
+Merges the various Test data sets together (Activity, Subject and Results)
+```
+```
+Merges the various Train data sets together (Activity, Subject and Results)
+```
+```
+Merges the resulting Test and Train data sets into one set
+```
+```
+Updates labels and variable names to their "english" equivalent
+```
+```
+Calculates avg and std. deviation by activity and subject
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 

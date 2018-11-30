@@ -34,6 +34,9 @@ Updates labels and variable names to their "english" equivalent
 ```
 Calculates avg and std. deviation by activity and subject
 ```
+```
+Outputs two (2) .csv files: the combined Test/Train data set and the summarized data set.
+```
 
 
 ## Built With

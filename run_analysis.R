@@ -1,3 +1,4 @@
+library(dataMaid)
 library(dplyr)
 
 originalWorkingDirectory <- "c:\\Users\\doug.mcclung\\Documents"
@@ -141,4 +142,18 @@ filteredData <- filteredData %>%
 summarizedData <- filteredData %>%
     group_by(Subject, Activity) %>%
     summarise_all(funs(mean, sd))
-str(summarizedData)
+#str(summarizedData)
+
+
+##
+# Output data sets to .csv files
+write.table(filteredData, file = "Combined Data.csv", row.names = FALSE, na = "", col.names = FALSE, sep = ",")
+write.table(summarizedData, file = "Summarized Data.csv", row.names = FALSE, na = "", col.names = FALSE, sep = ",")
+
+
+##
+# Generate codebooks
+makeCodebook(filteredData, replace = TRUE)
+makeCodebook(summarizedData, replace = TRUE)
+
+
